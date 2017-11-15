@@ -1,18 +1,21 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const cors = require('cors')
 
 const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 
-const routes = require('./routes')
-
 require('dotenv').load()
 const { PORT, DB_URI } = process.env
+
+const routes = require('./routes')
 
 const app = express()
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+
+app.use(cors())
 
 app.use(routes)
 
