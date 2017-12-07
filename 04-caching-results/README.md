@@ -1,10 +1,10 @@
-# Organizando código y cacheando resultados 
+# Organizando código y cacheando resultados 
 
 En esta lección organizaremos un poco mejor nuestro servidor express utilizando un [router](https://expressjs.com/en/guide/routing.html) y añadiremos un sistema de caché para optimizar nuestras peticiones a la API de unsplash
 
 ![cache](./md_img/cache.png)
 
-## Modularizando nuestros endpoints con routers
+## Modularizando nuestros endpoints con routers
 
 Nos creamos una carpeta `routes` donde vamos a crear nuestro router 
 
@@ -38,9 +38,9 @@ module.exports = getSearchResults
 ```
 
 
+Para separar conceptos aún más en nuestro código creamos un servicio donde centralizaremos las peticiones a la API (asi descargamos al router de este trabajo)
 
-
-** `unsplashApi.js` **
+**`unsplashApi.js`**
 ```
 const getAndCache = require('../utils/getAndCache')
 const { UNSPLASH_BASE_URL, UNSPLASH_CLIENT_ID } = process.env
@@ -54,7 +54,11 @@ function getSearchResultsUnsplash (query, page) {
 module.exports = { getSearchResultsUnsplash }
 ```
 
-** `getAndCache.js` **
+## Cacheando resultados
+
+Creamos la función `getAndCache` que utiliza un closure para ir guardando en el objeto `cache` el resultado de cada nueva petición que se va realizando. Así si la petición se ha realizado anteriormente la devolvemos directamente de nuestra copia interna (mucho más rapida)
+
+**`getAndCache.js`**
 ```
 const rp = require('request-promise')
 
@@ -77,7 +81,7 @@ const getAndCache = (function () {
 module.exports = getAndCache
 ```
 
-## Recursos
+## Recursos
 
 - http://expressjs.com/en/guide/routing.html
 - http://asanzdiego.blogspot.com.es/2013/02/el-principio-de-responsabilidad-unica.html
