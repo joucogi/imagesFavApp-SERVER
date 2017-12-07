@@ -1,29 +1,14 @@
 # [POST] → Add Favorite
 
-## Mongoose Connection to DB & Model
+## Crear BD MonggoLab y conectarnos mediante mongoose
 
 `npm i -S mongoose`
-
-Create mongoLab DB and ...
 
 **`.env`** 
 
 ```
 DB_URI=mongodb://admin:admin@dsXXXXXX.mlab.com:XXXXX/db-name
 ```
-
-**`models/User.js`** 
-
-```
-const mongoose = require('mongoose')
-
-const UserSchema = mongoose.Schema({
-  favorites: [String]
-})
-
-module.exports = mongoose.model('User', UserSchema)
-```
-
 
 **DB Connection on `index.js`**
 
@@ -44,21 +29,38 @@ mongoose
 ...
 ```
 
-## `body-parser` → `req.body` on POST data
+## Crear modelo mongoose
+
+**`models/User.js`** 
+
+```
+const mongoose = require('mongoose')
+
+const UserSchema = mongoose.Schema({
+  favorites: [String]
+})
+
+module.exports = mongoose.model('User', UserSchema)
+```
+
+
+## `body-parser` para poder recibir datos en POST
+
+`body-parser` → `req.body` on POST data
 
 `npm i -S body-parser`
 
 ```
 const bodyParser = require('body-parser')
-app.use(bodyParser.urlencoded({ extended: false }))
 
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 ```
 
-### Try it!
+### Pruebalo!
 
 ```
 curl -X POST \
-  http://localhost:3000/favorites/7891234 \  
-  -d user_id=twitter%7C61481865
+  http://localhost:3000/favorites/cccccc \  
+  -d user_id=12345
 ```
