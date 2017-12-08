@@ -5,6 +5,6 @@ const getSearchResults = require('./handlers/getSearchResults')
 const addFavorite = require('./handlers/addFavorite')
 
 router.get('/search/:query', getSearchResults)
-router.post('/favorites/:favorite_id', addFavorite)
+router.post('/favorite/:favorite_id', addFavorite)
 
 module.exports = router
