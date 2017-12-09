@@ -5,7 +5,9 @@ En esta lección vamos a añadir la funcionalidad de eliminar favoritos:
 - ​añadiendo el endpoint `[DELETE] /favorite/:idFavorite​` en el servidor
 - añadiendo el botón _eliminar favorito_ y su funcionalidad a través de los componentes `grid` y `fav` que ya tenemos creados
 
-![eliminar favoritos](./md-img/remove-favorites.png)
+[![eliminar favoritos](./md-img/remove-favorites.png)](https://pro.codely.tv/library/crea-una-app-mean-profesional-con-angularjs-y-webpack)
+
+_Esta lección corresponde al curso [Crea una app MEAN profesional con AngularJS y Webpack](https://pro.codely.tv/library/crea-una-app-mean-profesional-con-angularjs-y-webpack) disponible a través de [CodelyTV](https://pro.codely.tv/)_
 
 ## Creando el endpoint `[DELETE] /favorite/:idFavorite`
 

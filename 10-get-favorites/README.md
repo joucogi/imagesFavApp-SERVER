@@ -2,7 +2,9 @@
 
 En esta lección vamos a crear el endpoint `[GET] /favorites` que nos dará los favoritos de un usuario que le pasaremos por cabecera
 
-![favoritos servidor](./md_img/favoritos-servidor.png)
+[![favoritos servidor](./md_img/favoritos-servidor.png)](https://pro.codely.tv/library/crea-una-app-mean-profesional-con-angularjs-y-webpack)
+
+_Esta lección corresponde al curso [Crea una app MEAN profesional con AngularJS y Webpack](https://pro.codely.tv/library/crea-una-app-mean-profesional-con-angularjs-y-webpack) disponible a través de [CodelyTV](https://pro.codely.tv/)_
 
 ## Ampliando nuestro servicio con `addFavorite` y `getFavorites`
 

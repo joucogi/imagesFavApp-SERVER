@@ -2,7 +2,9 @@
 
 En esta lección crearemos nuestra BD MongoDB en [mLab](https://mlab.com/) y nos conectaremos a ella a través de un modelo mongoose. Prepararemos también nuestro servidor para que pueda recibir datos vía POST.
 
-![mongoDB](./md_img/mongoDB.png)
+[![mongoDB](./md_img/mongoDB.png)](https://pro.codely.tv/library/crea-una-app-mean-profesional-con-angularjs-y-webpack)
+
+_Esta lección corresponde al curso [Crea una app MEAN profesional con AngularJS y Webpack](https://pro.codely.tv/library/crea-una-app-mean-profesional-con-angularjs-y-webpack) disponible a través de [CodelyTV](https://pro.codely.tv/)_
 
 ## Creando la BD en mLab
 

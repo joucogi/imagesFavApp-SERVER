@@ -2,7 +2,9 @@
 
 En esta lección organizaremos un poco mejor nuestro servidor express utilizando un [router](https://expressjs.com/en/guide/routing.html) y añadiremos un sistema de caché para optimizar nuestras peticiones a la API de unsplash
 
-![cache](./md_img/cache.png)
+[![cache](./md_img/cache.png)](https://pro.codely.tv/library/crea-una-app-mean-profesional-con-angularjs-y-webpack)
+
+_Esta lección corresponde al curso [Crea una app MEAN profesional con AngularJS y Webpack](https://pro.codely.tv/library/crea-una-app-mean-profesional-con-angularjs-y-webpack) disponible a través de [CodelyTV](https://pro.codely.tv/)_
 
 ## Modularizando nuestros endpoints con routers
 

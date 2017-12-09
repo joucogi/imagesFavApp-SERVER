@@ -2,7 +2,10 @@
 
 En esta lección crearemos nuestro servidor express con un primer endpoint a través del cual podremos obtener imagenes desde la API de unsplash
 
-![Express](./md_img/express_api_server.png)
+[![Express](./md_img/express_api_server.png)](https://pro.codely.tv/library/crea-una-app-mean-profesional-con-angularjs-y-webpack)
+
+_Esta lección corresponde al curso [Crea una app MEAN profesional con AngularJS y Webpack](https://pro.codely.tv/library/crea-una-app-mean-profesional-con-angularjs-y-webpack) disponible a través de [CodelyTV](https://pro.codely.tv/)_
+
 
 ## Preparando nuestro entorno de desarrollo en el servidor
 
