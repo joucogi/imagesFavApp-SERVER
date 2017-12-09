@@ -7,8 +7,8 @@ const removeFavorite = require('./handlers/removeFavorite')
 const getFavorites = require('./handlers/getFavorites')
 
 router.get('/search/:query', getSearchResults)
-router.post('/favorites/:favorite_id', addFavorite)
-router.delete('/favorites/:favorite_id', removeFavorite)
+router.post('/favorite/:favorite_id', addFavorite)
+router.delete('/favorite/:favorite_id', removeFavorite)
 router.get('/favorites', getFavorites)
 
 module.exports = router
