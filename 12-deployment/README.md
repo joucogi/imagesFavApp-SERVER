@@ -1,4 +1,4 @@
-# 12- Deployment con `now`
+# Deployment con `now`
 
 En esta lección vamos a hacer el _deployment_ (subir a producción) nuestro proyecto, tanto la parte de cliente como la de servidor realizando antes algunos ajustes para que nuestra app maneje URL's diferentes según el entorno en el que esté
 
