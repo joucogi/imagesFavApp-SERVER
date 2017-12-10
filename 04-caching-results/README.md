@@ -83,8 +83,11 @@ const getAndCache = (function () {
 module.exports = getAndCache
 ```
 
+Esta técnica aplicada para crear la _caché_ se llama [memoization](https://www.sitepoint.com/implementing-memoization-in-javascript/) y es muy utilizada para optimizar operaciones costosas 
+
 ## Recursos
 
 - http://expressjs.com/en/guide/routing.html
 - http://asanzdiego.blogspot.com.es/2013/02/el-principio-de-responsabilidad-unica.html
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+- https://addyosmani.com/blog/faster-javascript-memoization/
